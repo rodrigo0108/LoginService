@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.rramos.loginservice.activities.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/login_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/article"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/username_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/usuario"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:layout_marginBottom="16dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/password_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/contrase_a"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:layout_marginBottom="16dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/iniciar_sesi_n"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:onClick="callLogin"
+                android:layout_margin="15dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registro"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:onClick="registerUser"
+                android:layout_margin="15dp"/>
+1
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
