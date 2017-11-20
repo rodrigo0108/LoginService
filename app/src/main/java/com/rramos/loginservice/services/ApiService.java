@@ -54,4 +54,7 @@ public interface ApiService {
     @DELETE("/api/v1/denuncias/{id}")
     Call<ResponseMessage> destroyDenuncia(@Path("id") Integer id);
 
+    @GET("api/v1/denuncias/{id}")
+    Call<Denuncia> showDenuncia(@Path("id") Integer id);
+
 }
